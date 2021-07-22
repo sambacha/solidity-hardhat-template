@@ -2,9 +2,9 @@
 name: nodejs
 on:
   push:
-     paths:
-      - "**/**"
-      - "!**/*.md/**"
+    paths:
+      - '**/**'
+      - '!**/*.md/**'
 
 env:
   CI: true

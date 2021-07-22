@@ -2,10 +2,18 @@
 
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 
+## Abstract
 
-## Overview
+Opinoninated Typescript/Solidity Framework
 
+## 🛠 Features
 
-## Develop
+- Google Typescript Style
+
+- Hardhat Framework
+
+- Conformant lint settings
 
 ## License
+
+MIT

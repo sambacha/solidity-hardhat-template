@@ -5,3 +5,14 @@ build/
 reports/
 node_modules
 .DS_Store
+
+*.log
+*.zip
+*.tgz
+*.tar.gz
+*.tar
+
+.cache/
+cache/
+artifacts/
+dist/
