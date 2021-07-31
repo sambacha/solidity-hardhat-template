@@ -34,9 +34,11 @@ const config: HardhatUserConfig = {
         version: '0.5.17',
         settings: {
             metadata: {
+                // explicit disable otherwise results in non-deterministic compilation 
                 bytecodeHash: "none",
             },
             optimizer: {
+                // disable optimizer for testing
                 enabled: true,
                 runs: 200,
                 details: {
