@@ -28,7 +28,7 @@ function accounts(networkName: string) {
     .filter(Boolean);
 }
 
-const HARDHAT_ENABLE_SENTRY=false
+const HARDHAT_ENABLE_SENTRY = false;
 const mnemonic = 'test test test test test test test test test test test junk';
 
 const config: HardhatUserConfig = {
@@ -75,7 +75,7 @@ const config: HardhatUserConfig = {
     disambiguatePaths: false,
   },
   typechain: {
-    outDir: 'src/types',
+    outDir: 'src/',
     target: 'ethers-v5',
   },
 };

@@ -2,18 +2,19 @@
   "name": "solidity-hardhat-template",
   "private": true,
   "version": "1.0.0",
-  "description": "",
+  "description": "typescript hardhat base with conformant linting",
   "files": [
     "/contracts/**/*.sol",
     "/build/contracts/*.json",
     "!/contracts/mocks/**/*"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npx tsc -b",
     "compile": "npx hardhat compile",
     "coverage": "npx hardhat coverage",
     "test": "npx hardhat test",
     "lint": "npx gts lint",
+    "format": "npx prettier --config prettier.config.js --write .",
     "clean": "npx gts clean",
     "fix": "npx gts fix"
   },
@@ -35,6 +36,7 @@
   "homepage": "https://github.com/sambacha/solidity-hardhat-template#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@tenderly/hardhat-tenderly": "^1.0.12",
     "@typechain/hardhat": "^2.2.0",
     "@types/node": "^14.11.2",
     "dotenv": "^10.0.0",

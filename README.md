@@ -14,6 +14,12 @@ Opinoninated Typescript/Solidity Framework
 
 - Conformant lint settings
 
+## Usage
+
+### Typechain
+
+- outputDir = `src/`
+
 ## License
 
 MIT
