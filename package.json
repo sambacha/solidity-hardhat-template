@@ -37,7 +37,7 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.2",
     "@tenderly/hardhat-tenderly": "1.0.12",
-    "@typechain/hardhat": "2.2.0",
+    "@typechain/hardhat": "2.3.0",
     "@types/node": "14.17.9",
     "dotenv": "10.0.0",
     "ethers": "5.4.1",
