@@ -22,4 +22,18 @@ const config: HardhatUserConfig = {
     },
  }
 };
+
+export const defaultSolcOutputSelection = {
+  "*": {
+    "*": [
+      "abi",
+      "evm.bytecode",
+      "evm.deployedBytecode",
+      "evm.methodIdentifiers",
+      "metadata",
+    ],
+    "": ["ast"],
+  },
+};
+
 export default config;
