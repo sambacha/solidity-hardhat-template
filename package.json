@@ -1,7 +1,7 @@
 {
   "name": "solidity-hardhat-template",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.3.0",
   "description": "typescript hardhat base with conformant linting",
   "files": [
     "/contracts/**/*.sol",
@@ -24,9 +24,6 @@
   },
   "keywords": [
     "solidity",
-    "hardhat",
-    "ethers",
-    "typechain",
     "ethereum",
     "smart contracts",
     "defi"
@@ -38,26 +35,21 @@
   },
   "homepage": "https://github.com/sambacha/solidity-hardhat-template#readme",
   "devDependencies": {
-    "@ethersproject/bytes": "^5.4.0",
-    "@ethersproject/abi": "^5.4.1",
-    "@ethersproject/providers": "^5.4.5",
-    "@nomiclabs/hardhat-ethers": "2.0.2",
-    "@tenderly/hardhat-tenderly": "1.0.12",
-    "@typechain/ethers-v5": "^7.0.1",
-    "@typechain/hardhat": "2.2.0",
-    "@types/node": "14.17.9",
-    "dotenv": "10.0.0",
-    "ethers": "5.4.1",
-    "gts": "3.1.0",
-    "hardhat": "2.5.0",
-    "lodash": "^4.17.15",
-    "prettier": "2.3.2",
-    "prettier-config-solidity": "1.5.2",
-    "prettier-plugin-solidity": "1.0.0-beta.17",
-    "ts-generator": "0.1.1",
-    "ts-node": "^10.2.1",
-    "typechain": "5.1.2",
-    "typescript": "4.3.5"
-  },
-  "dependencies": {}
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@tenderly/hardhat-tenderly": "^1.0.12",
+    "@typechain/ethers-v5": "^7.2.0",
+    "@typechain/hardhat": "^2.2.0",
+    "@types/node": "^14.11.2",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.4.1",
+    "gts": "^3.1.0",
+    "hardhat": "^2.5.0",
+    "prettier": "^2.3.2",
+    "prettier-config-solidity": "^1.4.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "ts-generator": "^0.1.1",
+    "ts-node": "^10.3.0",
+    "typechain": "^5.1.2",
+    "typescript": "^4.0.3"
+  }
 }
