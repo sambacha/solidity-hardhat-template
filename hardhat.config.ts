@@ -46,8 +46,14 @@ solidity: {
         },
     },
 },
+ paths: {
+    sources: "./contracts",
+    tests: "./test",
+    cache: "./cache",
+    artifacts: "./artifacts"
+  },
     typechain: {
-        outDir: 'src/',
+        outDir: 'types/',
         target: 'ethers-v5',
     },
 };
