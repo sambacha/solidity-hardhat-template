@@ -2,11 +2,10 @@
  * @package solidity-hardhat-template
  * @filename hardhat.config.ts
  * @file hardhat configuration
- * @version 1.2.0
+ * @version 1.3.0
  */
 
 import '@nomiclabs/hardhat-etherscan';
-import '@typechain/hardhat';
 import '@nomiclabs/hardhat-ethers';
 import '@typechain/hardhat';
 import 'dotenv/config';
@@ -63,9 +62,6 @@ solidity: {
     goerli: {
       url: `https://goerli.infura.io/v3/${process.env.GOERLI_RPC}`,
     },
-  },
-  etherscan: {
-    apiKey: process.env.ETHERSCAN_API_KEY,
   },
   paths: {
     sources: './contracts',
