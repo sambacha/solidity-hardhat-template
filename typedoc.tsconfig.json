@@ -11,6 +11,7 @@
         "noImplicitReturns": true,
         "pretty": true,
         "sourceMap": true,
+        "moduleResolution": "node",
         "strict": true,
         "target": "es2020",
         "rootDir": ".",
