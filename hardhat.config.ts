@@ -1,8 +1,13 @@
+// @ts-check
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+
 /**
  * @package solidity-hardhat-template
  * @filename hardhat.config.ts
  * @file hardhat configuration
- * @version 1.3.0
+ * @version 1.5.0
  */
 
 import '@nomiclabs/hardhat-etherscan';
@@ -13,14 +18,11 @@ import { HardhatUserConfig } from 'hardhat/types';
 
 const test_mnemonic = 'test test test test test test test test test test test junk';
 
-/** @type import('hardhat/config').HardhatUserConfig */
 const config: HardhatUserConfig = {
 /**
-* @note
-* Before version 0.8.6 omitting the 'enabled' key was not equivalent to setting
-* it to false and would actually disable all the optimizations.
+* @note Before version 0.8.6 omitting the 'enabled' key was not equivalent to setting 
+*   it to false and would actually disable all the optimizations.
 * @see: {@link https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description}
-*
 */
 solidity: {
     version: '0.8.10',
