@@ -23,15 +23,17 @@ jobs:
 
     steps:
       - name: Clone repository
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2.1.5
+        uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node }}
 
       - name: Install npm dependencies
+        id: install
         run: npm install
 
       - name: Run build
+        id: build
         run: npm run build
