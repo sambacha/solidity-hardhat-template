@@ -1,23 +1,44 @@
 {
-    "compilerOptions": {
-        "allowUnreachableCode": false,
-        "allowUnusedLabels": false,
-        "declaration": true,
-        "forceConsistentCasingInFileNames": true,
-        "lib": ["es2018"],
-        "module": "commonjs",
-        "noEmitOnError": true,
-        "noFallthroughCasesInSwitch": true,
-        "noImplicitReturns": true,
-        "pretty": true,
-        "sourceMap": true,
-        "strict": true,
-        "target": "es2018",
-        "rootDir": ".",
-        "outDir": "build",
-        "esModuleInterop": true,
-        "resolveJsonModule": true
-    },
-    "include": ["src/**/*.ts"],
-    "exclude": ["node_modules"]
+  "compilerOptions": {
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "declaration": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": [
+      "esnext"
+    ],
+    "module": "commonjs",
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es2020",
+    "rootDir": ".",
+    "outDir": "build",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "plugins": [
+      {
+        "name": "typescript-eslint-language-service"
+      }
+    ]
+  },
+  "include": [
+    "src/**/*.ts",
+    "types/**/*.ts",
+    "typechain/**/*.ts",
+    "tasks/**/*.ts"
+  ],
+  "files": [
+    "hardhat.config.ts"
+  ],
+  "exclude": [
+    "**/node_modules",
+    "**/.*/",
+    "src/**/*.test.ts"
+  ]
 }
