@@ -10,7 +10,7 @@
  * @version 1.5.0
  */
 
-import '@nomiclabs/hardhat-etherscan';
+import '@primitivefi/hardhat-dodoc';
 import '@nomiclabs/hardhat-ethers';
 import '@typechain/hardhat';
 import 'dotenv/config';
@@ -25,7 +25,7 @@ const config: HardhatUserConfig = {
 * @see: {@link https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description}
 */
 solidity: {
-    version: '0.8.10',
+    version: '0.8.13',
     settings: {
       metadata: {
         bytecodeHash: 'none',
