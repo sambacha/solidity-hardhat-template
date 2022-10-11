@@ -1,7 +1,7 @@
 {
   "name": "solidity-hardhat-template",
   "private": true,
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "typescript hardhat base with conformant linting",
   "files": [
     "/dist/**/*",
@@ -40,6 +40,7 @@
     "url": "https://github.com/sambacha/solidity-hardhat-template/issues"
   },
   "homepage": "https://github.com/sambacha/solidity-hardhat-template#readme",
+  "dependencies": {},
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
@@ -51,17 +52,43 @@
     "codecov": "^3.8.3",
     "dotenv": "^16.0.0",
     "ethers": "^5.6.1",
-    "gts": "^3.1.0",
-    "hardhat": "^2.9.9",
+    "hardhat": "2.12.0",
     "lodash": "^4.17.21",
     "prettier": "^2.6.2",
     "prettier-config-solidity": "latest",
     "prettier-plugin-solidity": "^1.0.0-beta.19",
-    "ts-generator": "^0.1.1",
     "ts-node": "^10.8.0",
     "tslib": "^2.4.0",
     "typechain": "^8.1.0",
-    "typescript": "^4.7.3"
+    "tsup": "^6.2.3",
+    "typescript": "^4.7.4",
+    "wireit": "^0.7.1"
   },
-  "dependencies": {}
+  "wireit": {
+    "dev": {
+      "command": "vite",
+      "files": [
+        "src/**/*.{ts,tsx,svg,css}",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "packageLocks": [
+        "package-lock.json"
+      ]
+    },
+    "build": {
+      "command": "tsc && vite build",
+      "files": [
+        "src/**/*.{ts,tsx,svg,css}",
+        "tsconfig.json",
+        "vite.config.ts"
+      ],
+      "output": [
+        "dist/**"
+      ],
+      "packageLocks": [
+        "package-lock.json"
+      ]
+    }
+  }
 }
