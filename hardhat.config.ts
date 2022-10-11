@@ -7,7 +7,7 @@
  * @package solidity-hardhat-template
  * @filename hardhat.config.ts
  * @file hardhat configuration
- * @version 1.5.0
+ * @version 1.6.0
  */
 
 import '@nomiclabs/hardhat-etherscan';
@@ -25,16 +25,17 @@ const config: HardhatUserConfig = {
 * @see: {@link https://docs.soliditylang.org/en/latest/using-the-compiler.html#compiler-input-and-output-json-description}
 */
 solidity: {
-    version: '0.8.10',
+    version: '0.8.17',
     settings: {
       metadata: {
         bytecodeHash: 'none',
       },
+      viaIr: true,
       optimizer: {
         enabled: true,
-        runs: 1_000,
+        runs: 4_294_967_295,
         details: {
-          yul: false,
+          yul: true,
         },
       },
       outputSelection: {
@@ -45,6 +46,8 @@ solidity: {
             'evm.deployedBytecode',
             'evm.methodIdentifiers',
             'metadata',
+            'evm.assembly',
+            'irOptimized'
           ],
           '': ['ast'],
         },
